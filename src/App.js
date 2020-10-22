@@ -1,7 +1,14 @@
 import React from 'react';
+import Navbar from './navbar/Navbar';
+import FormField from './formfield/FormField';
+import SignUp from './signup/SignUp.js'
 
 const App = () => {
-  return <h1>Bulma</h1>;
+  return (
+    <div>
+      <SignUp />
+    </div>
+    );
 };
 
 export default App;
