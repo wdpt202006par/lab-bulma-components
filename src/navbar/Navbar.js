@@ -1,7 +1,8 @@
 import React from 'react';
 import './Navbar.css';
+import CoolButton from '../CoolButton/CoolButton.js'
 
-function Navbar() {
+function Navbar(props) {
    return (
       <nav className='navbar is-transparent'>
          <div className='navbar-brand'>
@@ -29,14 +30,11 @@ function Navbar() {
                <div className='navbar-item'>
                   <div className='field is-grouped'>
                      <p className='control'>
-                        <a href='#' class='button is-info'>
-                           Login
-                        </a>
+                        <CoolButton isInfo>Login</CoolButton>
                      </p>
+
                      <p className='control'>
-                        <a href='#' className='button is-primary'>
-                           Signup
-                        </a>
+                     <CoolButton isPrimary>Signup</CoolButton>
                      </p>
                   </div>
                </div>
