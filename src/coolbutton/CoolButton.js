@@ -31,22 +31,9 @@ function CoolButton (props) {
         isWarning: 'is-warning',
         isWhite: 'is-white',
     }
-    
-    // let test;
-    // addClass = (props) => {
-    //     buttonClass.forEach(el => {
-    //         if (Object.keys(el) === props.el) {
-    //             return test = buttonClass.el;
-    //         }
-    //     })
-    // }
-    const buttonClasses = {
-        isPrimary: 'is-primary',
-        isSuccess: 'is-success',
-        isDanger: 'is-danger',
-    }
+  
     let addClass = () => {
-        const arr = []
+        const arr = [];
 
         arr.push('button')
         arr.push(props.className)
@@ -54,14 +41,7 @@ function CoolButton (props) {
         // pour toutes les props (Object.keys(props).forEach(k => props[k]))
         //   si elle figure dans l'objet buttonClass
         //     Alors, on rajoute dans arr, la classe correspondante
-
-        if(props.isPrimary) {
-            arr.push('is-primary')
-        }
-        if(props.isSuccess) {
-            arr.push('is-success')
-        }
-
+        Object.keys(props).forEach(k => Object.keys(buttonClass).includes(k) ? arr.push(buttonClass[k]) : arr)
         return arr.join(' ');
     }
     return (
