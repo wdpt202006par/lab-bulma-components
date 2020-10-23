@@ -1,8 +1,8 @@
 import React from 'react';
 import 'bulma/css/bulma.css';
-import FormField from '../formfield/FormFields';
 
-const Signup = (props) => {
+
+const Signup = () => {
     return (<div className="signup">
         <Navbar/>
         <form>
