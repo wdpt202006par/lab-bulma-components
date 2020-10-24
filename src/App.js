@@ -20,10 +20,7 @@ const App = () => {
         type="email"
         placeholder="e.g. alexsmith@gmail.com"
       />
-			<Message isInfo title="Hello World">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
-        <strong>Pellentesque risus mi</strong>.
-      </Message>
+			<Message isInfo title="Hello World" />
 			<Signup />
 		</div>
 	)
